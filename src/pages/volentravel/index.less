@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.volunteerContainer {
+    background: #fff;
+    width: 100%;
+    min-height: 1vh;
+    .bannerImgs {
+      width: 100%;
+      height: 1.5rem;
+      // margin: 0.08rem 0;
+      img {
+        width: 100%;
+        height: 1.5rem;
+        display: block;
+      }
+    }
+    .tabContent {
+        padding: 0.16rem 0.16rem 0 0.16rem;
+        background: #fff;
+        .contentItem {
+            .itemImg {
+                width: 100%;
+                height: 1.28rem;
+                margin-bottom: 0.04rem;
+                display: block;
+            }
+            .title {
+                font-size: 0.14rem;
+                font-family: PingFangSC-Regular;
+                color: #3c3c3c;
+                line-height: 0.2rem;
+            }
+            .specialDes {
+                font-size: 0.1rem;
+                font-family: PingFangSC-Light;
+                color: #9c9c9c;
+                line-height: 0.16rem;
+            }
+        }
+    }
+    .blank{
+        .blank-pic{
+            width: 1.26rem;
+            height: 1.09rem;
+            margin: 0.5rem auto 0;
+            display: block;
+        }
+        .blank-text{
+            color: #9C9C9C;
+            margin-top: 0.09rem;
+            text-align: center;
+            height: 0.2rem;
+            line-height: 0.2rem;
+            font-size: 0.14rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+/** 旅行日志 **/
+.journalContainer {
+    border-top: 1px solid #e5e5e5;
+    .headTitle {
+        padding: 0.16rem 0;
+        font-size: 0.16rem;
+        font-family: PingFangSC-Semibold;
+        color: #3c3c3c;
+        line-height: 0.24rem;
+        div {
+            height: 0.14rem;
+            margin-top: 0.05rem;
+            float: left;
+            vertical-align: middle;
+            margin-right: 0.06rem;
+            border-left: 0.04rem solid #00cc88;
+        }
+    }
+    .dataBox {
+        width: calc(~'100% + 0.16rem');
+        display: flex;
+        overflow-x: scroll;
+        padding-bottom: 0.16rem;
+    }
+    .journalData {
+        display: inline-block;
+        width: 2.1rem;
+        margin-right: 0.16rem;
+        .mainImg {
+            width: 2.1rem;
+            height: 2.04rem;
+            display: block;
+        }
+        // .info {
+        //     background: #ffffff;
+        //     width: 2.1rem;
+        //     padding: 0.08rem 0 0.16rem 0;
+        //     .title {
+        //         font-size: 0.14rem;
+        //         font-family: PingFangSC-Regular;
+        //         color: #3c3c3c;
+        //         line-height: 0.22rem;
+        //     }
+        //     .extra {
+        //         font-size: 10px;
+        //         font-family: PingFangSC-Regular;
+        //         color: #9c9c9c;
+        //         line-height: 14px;
+        //         vertical-align: middle;
+        //     }
+        // }
+    }
+}
+/** 覆盖mint-ui **/
+.mint-navbar {
+    padding: 0 0.32rem;
+    justify-content: space-between;
+    height: 0.44rem;
+}
+.mint-navbar .mint-tab-item {
+    flex: none;
+    padding: 0 !important;
+}
+.mint-navbar .mint-tab-item-label {
+    font-size: 0.16rem;
+    color: #6c6c6c;
+    line-height: 0.34rem;
+    margin: 0.06rem 0;
+}
+.mint-navbar .mint-tab-item.is-selected .mint-tab-item-label {
+    color: #3c3c3c;
+    font-weight: bold;
+}
+.mint-navbar .mint-tab-item.is-selected {
+    border-bottom: 4px solid #00cc88 !important;
+    margin-bottom: 0px !important;
+}
+.mint-tab-container {
+    overflow: hidden;
+    position: relative;
+    margin-top: 4px;
+    border-top: 1px solid #e5e5e5;
+}
+.mint-swipe-indicators {
+  bottom: 0;
+  left: auto !important;
+  right: 0;
+}
+.mint-swipe-indicators .mint-swipe-indicator {
+  width: 0.04rem;
+  height: 0.04rem;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 0.02rem;
+  opacity: 1;
+}
+.mint-swipe-indicators .mint-swipe-indicator.is-active {
+  width: 0.1rem;
+}
+.button-review{
+    height: 0.44rem;
+    display: flex;
+    margin: 0 auto 0.16rem;
+    background: #00CC88;
+    border-radius: 0.04rem;
+    justify-content: center;
+    align-items: center;
+    span{
+        color: #fff;
+        font-weight: bold;
+        font-size: 0.16rem;
+    }
+    .button-icon{
+        width: 0.05rem;
+        height: 0.09rem;
+        margin-left: 0.09rem;
+    }
+}

@@ -1,0 +1,295 @@
+.debang-detail-main {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(https://qiniu-image.qtshe.com/debang/debang-n-detail-bg.png);
+  background-size: 100% 6.09rem;
+  background-repeat: no-repeat;
+  background-color: #272dde;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 1.16rem;
+  padding-bottom: 0.68rem;
+}
+
+.debang-detail-info {
+  width: 3.55rem;
+  height: 1.54rem;
+  // background-image: url(https://qiniu-image.qtshe.com/debang/debang-detail-title-border.png);
+  // background-size: 100% 100%;
+  // background-repeat: no-repeat;
+  padding: 0.26rem;
+  margin-bottom: 0.1rem;
+}
+
+.debang-detail-info-title {
+  font-size: 0.19rem;
+  color: #313131;
+  font-weight: bold;
+}
+
+.debang-detail-info-subTitle {
+  font-size: 0.15rem;
+  color: #313131;
+  max-width: 3rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.debang-detail-info-progress {
+  width: 3rem;
+  height: 0.17rem;
+  border-radius: 0.08rem;
+  background-color: #e5e5e5;
+  margin-top: 0.2rem;
+
+  &.title-over-length {
+    margin-top: 0.08rem;
+  }
+}
+
+.debang-detail-info-progress-c {
+  height: 100%;
+  border-radius: 0.08rem;
+  background-image: linear-gradient(180deg, #feaf00, #fe8000);
+}
+
+.debang-detail-info-bottom {
+  font-size: 0.13rem;
+  color: #313131;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.18rem;
+
+  .protruding {
+    color: #fe8f00;
+  }
+
+  &.title-over-length {
+    margin-top: 0.1rem;
+  }
+}
+
+.debang-detail-button {
+  width: 3.13rem;
+  height: 0.76rem;
+  background-image: url(https://qiniu-image.qtshe.com/debang/debang-n-detail-btn.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 0.17rem;
+  color: #552626;
+  text-align: center;
+
+  .debang-detail-button-text {
+    font-size: 0.21rem;
+    margin-top: 0.08rem;
+    font-weight: bold;
+  }
+
+  .debang-detail-button-subText {
+    font-size: 0.14rem;
+    line-height: 1.2;
+  }
+}
+
+.debang-detail-task-box {
+  background: #ffb224;
+  border: 0.03rem solid #020000;
+  border-radius: 0.12rem;
+  margin-top: 0.5rem;
+}
+
+.debang-detail-task {
+  width: 3.56rem;
+  height: 5.36rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 0.12rem;
+  margin-top: 0.1rem;
+}
+
+.debang-detail-task-title-1 {
+  width: 1.94rem;
+  height: 0.46rem;
+  align-self: self-start;
+  background-image: url(https://qiniu-image.qtshe.com/debang/debang-n-detail-title-1.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.debang-detail-task-item {
+  width: 3.34rem;
+  height: 1.25rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 0.26rem;
+  position: relative;
+  color: #373737;
+  font-size: 0.17rem;
+  padding-top: 0.33rem;
+  padding-left: 0.27rem;
+}
+
+.debang-detail-task-item-1 {
+  background-image: url(https://qiniu-image.qtshe.com/debang/debang-n-detail-task-1.png);
+}
+
+.debang-detail-task-item-2 {
+  background-image: url(https://qiniu-image.qtshe.com/debang/debang-n-detail-task-2.png);
+}
+
+.debang-detail-task-item-3 {
+  background-image: url(https://qiniu-image.qtshe.com/debang/debang-n-detail-task-3.png);
+}
+
+.debang-detail-task-button-dis,
+.debang-detail-task-button {
+  width: 2rem;
+  height: 0.42rem;
+  line-height: 0.4rem;
+  background-color: #ffe800;
+  border: 1px solid #020000;
+  border-radius: 0.08rem;
+  position: absolute;
+  left: 50%;
+  bottom: -0.16rem;
+  margin-left: -1rem;
+  text-align: center;
+  color: #552626;
+  font-weight: bold;
+}
+
+.debang-detail-task-button-dis {
+  color: #ffffff;
+  background-color: #ababab;
+}
+
+.debang-detail-task-subTitle {
+  font-weight: bold;
+}
+
+.debang-detail-list {
+  width: 3.56rem;
+  height: 7rem;
+  border-radius: 0.12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.debang-detail-task-title-2 {
+  width: 1.24rem;
+  height: 0.416rem;
+  align-self: self-start;
+  background-image: url(https://qiniu-image.qtshe.com/debang/debang-n-detail-title-2.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 0.12rem;
+}
+
+.debang-detail-school-list {
+  width: 3.37rem;
+  height: 6.09rem;
+  background-color: #ffffff;
+  border-radius: 0.08rem;
+  overflow: auto;
+}
+
+.debang-detail-school-box {
+  position: relative;
+  padding: 0.18rem 0.093rem;
+}
+
+.debang-alert-donation-content {
+  height: 2.5rem;
+}
+
+.debang-alert-donation-bg {
+  width: 100%;
+  height: 1.746rem;
+  background-image: url(https://qiniu-image.qtshe.com/debang/debang-n-alert-d.png);
+  background-size: 1.7rem 100%;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  margin-top: -0.42rem;
+}
+
+.debang-alert-donation-btnBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.2rem 0;
+}
+
+.debang-alert-donation-btn {
+  width: 1.3rem;
+  height: 0.42rem;
+  line-height: 0.42rem;
+  text-align: center;
+  border-radius: 0.02rem;
+  font-size: 0.16rem;
+  flex: none;
+  border:1px solid #020000;
+}
+
+.debang-alert-donation-btn-cancel {
+  color: #606060;
+}
+
+.debang-alert-donation-btn-confirm {
+  color: #301d1d;
+  background-color: #ffcf3c;
+}
+
+.debang-alert-name-content {
+  height: 2.53rem;
+}
+
+.debang-alert-name-bg {
+  width: 100%;
+  height: 2.57rem;
+  background-image: url(https://qiniu-image.qtshe.com/debang/debang-n-alert-name.png);
+  background-size: 2.57rem 100%;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  margin-top: -0.4rem;
+  position: relative;
+}
+
+.debang-alert-name-input {
+  width: 1.99rem;
+  height: 0.406rem;
+  text-align: center;
+  padding: 0 0.06rem;
+  border-radius: 0.07rem;
+  border: 1px solid #f77039;
+  background-color: transparent;
+  position: absolute;
+  top: 1.4rem;
+  left: 50%;
+  margin-left: -0.995rem;
+}
+
+.debang-alert-name-btn-confirm {
+  width: 2.57rem;
+  height: 0.48rem;
+  position: absolute;
+  top: 2.1rem;
+  left: 50%;
+  margin-left: -1.285rem;
+}
+
+.debang-alert-name-validate {
+  position: absolute;
+  top: 1.88rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fa6166;
+  font-size: 0.12rem;
+}

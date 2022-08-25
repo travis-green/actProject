@@ -1,0 +1,122 @@
+.drawer {
+    /* 遮罩 */
+    .mask-show {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 50;
+      background-color: rgba(0,0,0,.5);
+      opacity: 1;
+      transition: opacity .5s;
+    }
+    .mask-hide {
+      opacity: 0;
+      transition: opacity .5s;
+    }
+  
+    @keyframes fadeInBottom {
+        from {
+          opacity: 0;
+          transform: translate3d(0, 100%, 0);
+        }
+      
+        to {
+          opacity: 1;
+          transform: none;
+        }
+    }
+    /* 滑块 */
+    .main {
+      width: 100%;
+      position: fixed;
+      z-index: 50;
+      animation-duration: .5s;
+        animation-fill-mode: both;
+        animation-name: fadeInBottom;
+    }
+    .main-show {
+      opacity: 1;
+    }
+    .main-hide {
+      opacity: 0;
+    }
+  
+    .titleBox {
+        color:#fff;
+        line-height:28px;
+    }
+
+    .titleBoxTop {
+      font-size:0.12rem;
+      font-family:PingFangSC-Regular,PingFang SC;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+    }
+  
+    .titleBox span {
+        display:block;
+        font-size:0.2rem;
+        line-height:0.2rem;
+        font-family:PingFangSC-Semibold,PingFang SC;
+        font-weight:600;
+    }
+    
+    .coin {
+        width:0.78rem;
+        height:0.55rem;
+        top:0.17rem;
+        left:0.18rem;
+    }
+  
+    /* 其他样式 */
+    .drawer-head {
+      display: flex;
+      align-items:center; 
+      justify-content:space-between;
+      background:url(https://qiniu-image.qtshe.com/newPersonWelfare/drawTitleBk.png);
+      height: 0.91rem;
+      border-radius:12px 12px 0 0;
+      line-height: 45px;
+      padding: 0 15px;
+      font-size: 14px;
+      font-weight: bold;
+      border-bottom: 1px solid #eee;
+      .close-btn {
+        top:0.13rem;
+        right:0.16rem;
+        display: inline-block;
+        background:url(https://qiniu-image.qtshe.com/newPersonWelfare/drawCloseBtn.png) no-repeat;
+        background-size:0.24rem 0.24rem;
+        height: 0.24rem;
+        width: 0.24rem;
+        margin-bottom: 35px;
+      }
+    }
+  
+    .drawer-body {
+      background:#fff;
+      font-size: 14px;
+      padding: 15px;
+      overflow: scroll !important;
+      max-height: 385px;
+    }
+  
+    .detailBox {
+      border-bottom: 1px solid #E5E5E5;
+      padding-top: 10px;
+    }
+  
+    .detailTextBtm {
+        font-size:0.14rem;
+        font-family:PingFangSC-Regular,PingFang SC;
+        font-weight:400;
+        color:rgba(224,61,60,1);
+        line-height:0.32rem;
+    }
+    
+    .detailTextBtm span {
+      padding-left: 0.24rem;
+    }
+  }
