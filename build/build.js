@@ -49,10 +49,10 @@ compiler.run(function (err, stats) {
   }
   if (process.env.NODE_ENV === 'development') {
     // 上传到开发服务器
-    // gulpUploadFile('/opt/webapps/winxin/act-vue', '118.31.250.124', 'root', 'asdasd')
+    // gulpUploadFile('/opt/webapps/winxin/act-vue', 'xxx.xxx.xxx.xxx', 'root', 'asdasd')
   }
   if (process.env.NODE_ENV === 'testing') {
     // 上传到测试服务器
-    // gulpUploadFile('/opt/webapps/winxin/act-vue', '47.99.74.38', 'root', 'asdasd')
+    // gulpUploadFile('/opt/webapps/winxin/act-vue', 'xxx.xxx.xxx.xxx', 'root', 'asdasd')
   }
 })
